@@ -1,3 +1,5 @@
 vendor/
 secret_key.php
 composer.lock
+composer.phar
+
