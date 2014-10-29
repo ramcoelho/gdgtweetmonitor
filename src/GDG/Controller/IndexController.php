@@ -13,8 +13,8 @@ class IndexController
 {
     public function loadTag(BucketInterface $bucket, $tag, $since_id = 0, $count = 10)
     {
-        if (file_exists(APP_ROOT . '/secret_key.php'))
-           include APP_ROOT . '/secret_key.php';
+        if (file_exists(APP_ROOT . '/secret_key.php.dist'))
+           include APP_ROOT . '/secret_key.php.dist';
 
         $client = new Browser(new Curl());
         $consumer = new Consumer(
@@ -22,6 +22,7 @@ class IndexController
             CONSUMER_KEY,
             CONSUMER_SECRET
         );
+
         $consumer->setConverter(
             '/1.1/search/tweets.json',
             new TwitterSearchConverter()
