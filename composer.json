@@ -1,12 +1,12 @@
 {
-    "autoload": {
-        "psr-0": {
-            "GDG": "src/"
-        }
-    },
-    "require": {
-        "nixilla/twitter-api-consumer": "~0.3",
-        "silex/silex": "~1.2",
-	"kriswallsmith/buzz": "~0.13"
+  "autoload": {
+    "psr-0": {
+      "GDG": "src/"
     }
+  },
+  "require": {
+    "nixilla/twitter-api-consumer": "~0.3",
+    "silex/silex": "~1.2",
+    "kriswallsmith/buzz": "~0.13"
+  }
 }

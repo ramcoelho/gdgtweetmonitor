@@ -1,28 +1,42 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Monitor</title>
-    <link rel="stylesheet" href="css/monitor.css" />
-  </head>
-  <body>
-    <div id="stage">
-      <div class="row" id="template">
-        <div class="tweet" id="0">
-          <div class="author">
-            <div class="picture">
-              <img src="" />
+<head>
+   <meta charset="utf-8"/>
+   <title>Monitor</title>
+   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css"/>
+
+   <!--Tema Material Design Bootstrap-->
+   <link href="css/md/ripples.min.css" rel="stylesheet">
+   <link href="css/md/material-wfont.min.css" rel="stylesheet">
+   <link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/monitor.css"/>
+</head>
+<body>
+<div class="preload" style="display: none;"></div>
+<div class="topo well well-sm">
+   <img src="img/ic_menu_white_48dp.png" alt=""/><div class="hashtag">#devfestnorte</div>
+</div>
+
+<div class="geral">
+   <div id="stage">
+      <div class="_container well well-sm" id="template">
+         <div class="tweet" id="0">
+            <div class="picture"></div>
+            <div class="author">
+               <div class="name">Autor Exemplo</div>
+               <div class="screen-name">@autorexemplo</div>
+               <div class="text">Este é um tweet de #exemplo</div>
+               <div class="timestamp text-warning">Tue Oct 28 17:32:24 +0000 2014</div>
             </div>
-            <div class="name">Autor Exemplo</div>
-            <div class="screen-name">@autorexemplo</div>
-          </div>
-          <div class="text">Este é um tweet de #exemplo</div>
-          <div class="timestamp">Tue Oct 28 17:32:24 +0000 2014</div>
-        </div>
+         </div>
       </div>
-    </div>
-  </body>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/monitor.js"></script>
+   </div>
+</div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/monitor.js"></script>
+<!--<script src="js/cssrefresh.js"></script>-->
 </html>
 
