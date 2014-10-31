@@ -3,26 +3,70 @@
   <head>
     <meta charset="utf-8" />
     <title>Monitor</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/dist/css/ripples.min.css" rel="stylesheet">
+        <link href="bootstrap/dist/css/material-wfont.min.css" rel="stylesheet">
+        <link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/monitor.css" />
   </head>
   <body>
-    <div id="stage">
-      <div class="row" id="template">
-        <div class="tweet" id="0">
-          <div class="author">
-            <div class="picture">
-              <img src="" />
-            </div>
-            <div class="name">Autor Exemplo</div>
-            <div class="screen-name">@autorexemplo</div>
-          </div>
-          <div class="text">Este é um tweet de #exemplo</div>
-          <div class="timestamp">Tue Oct 28 17:32:24 +0000 2014</div>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <p style="font-size:32px">#devfestnorte</p>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-warning-collapse">
+          
         </div>
       </div>
     </div>
+
+    <div class="container">
+
+      <div class="col-md-4">
+        <p class="text-center">
+          <img src="logo-devfest-norte-small.png" class="img-responsive">
+        </p>
+
+        <p class="lead">
+          <br>
+          Mande a sua mensagem com a hashtag <strong>#devfestnorte</strong> e apareça no telão!
+        </p>
+      </div>
+
+      <div class="col-md-8">
+        <h1 class="text-right">
+          O que tá rolando?
+        </h1>
+        <!-- COL -->
+        <div class="list-group" id="stage">
+          <div id="template">
+            <div class="list-group-item tweet" id="0">
+              <div class="author well">
+                <div class="row-picture picture">
+                    <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                </div>
+                <div class="row-content">
+                    <h3 class="list-group-item-heading name">Tile with avatar</h3>
+                    <div class="screen-name">@autorexemplo</div>
+                    <p class="text lead">Donec id elit non mi porta gravida at eget metus</p>
+                    <div class="timestamp pull-right text-default">Txxxue Oct 28 17:32:24 +0000 2014</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COL -->
+      </div>      
+    </div>
+
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/material.min.js"></script>
   <script src="js/monitor.js"></script>
 </html>
 
