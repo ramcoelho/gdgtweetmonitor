@@ -1,11 +1,11 @@
 $(function () {
   var last_tweet = '0';
-  var production_url = 'http://localhost/gdgtweetmonitor/devfestnorte/';
-  var development_url = 'http://www.twitterdevfest.dev/gdgtweetmonitor/public/example.json';
+  var production_url = 'http://devfestnorte.nexy.com.br/devfestnorte/';
+  //var development_url = 'http://www.twitterdevfest.dev/gdgtweetmonitor/public/example.json';
 
   setInterval(function() {
-    var url = development_url;
-    //var url = production_url + last_tweet;
+    //var url = development_url;
+    var url = production_url + last_tweet;
     var jqxhr = $.getJSON(url, function(data) {
       var newrow;
       if (data) {
