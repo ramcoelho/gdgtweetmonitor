@@ -6,7 +6,7 @@ $(function () {
   setInterval(function() {
     //var url = development_url;
     var url = production_url + last_tweet;
-    var jqxhr = $.getJSON(url, function(data) {
+    var loadJSON = function(data) {
       var newrow;
       if (data) {
         $.each(data, function(key, val) {
@@ -28,10 +28,13 @@ $(function () {
         });
       }
       data = false;
-    }).fail(function() {
-      console.log("Erro ao atualizar");
-    });
+    };
+    var jqxhr = $.getJSON(url, loadJSON)
+        .fail(function() {
+          console.log("Erro ao atualizar");
+        });
   }, 10000);
   $('#template').hide();
+  loadJSON();
 });
 
