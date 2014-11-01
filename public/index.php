@@ -10,7 +10,9 @@ use \GDG\Controller\IndexController;
 use \GDG\Model\TweetBucket;
 
 $app = new Silex\Application();
-$app['debug']=true;
+$app->get('/', function () use ($app) {
+    return $app->redirect('/monitor.html');
+});
 $app->get('/{tag}/{since}', function ($tag, $since = 0) use ($app) {
     $ic = new IndexController();
     $bucket = new TweetBucket();
